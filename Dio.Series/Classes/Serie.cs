@@ -34,5 +34,14 @@ namespace Dio.Series
             retorno += "Ano de Inicio: " + this.Ano;
             return retorno;
         }
+        public string retornaTitulo{}
+        {
+            return this.Titulo;
+        }
+
+        public int retornaId{}
+        {
+            return this.Id;
+        }
     }
 }
