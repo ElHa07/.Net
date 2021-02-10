@@ -7,16 +7,16 @@ namespace Dio.Series
 
     public class SerieRepositorio : IRepositorio<Serie>
     {
-        private List<Serie> ListaSeries = new List<Serie>();
+        private List<Serie> ListaSerie = new List<Serie>();
 
-        public void Atualiza(int id, Serie entdidade)
+        public void Atualiza(int id, Serie objeto)
         {
-            throw new NotImplementedException();
+            ListaSerie[id] = objeto;
         }
 
         public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            ListaSerie[id].Excluir();
         }
 
         public void Insert(Serie entidade)
