@@ -17,26 +17,27 @@ namespace Dio.Series
         public void Exclui(int id)
         {
             ListaSerie[id].Excluir();
+			// implemento envio de e-mail
         }
 
-        public void Insert(Serie entidade)
+        public void Insert(Serie objeto)
         {
-            throw new NotImplementedException();
+            listaSerie.Add(objeto);
         }
 
         public List<Serie> Lista()
         {
-            throw new NotImplementedException();
+            return listaSerie;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return listaSerie.Count;
         }
 
         public Serie RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return listaSerie[id];
         }
     }
 }
